@@ -9,40 +9,56 @@
 
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
-
-    <!-- First, create a form tag where our inputs will be nested -->
-
-
-      <!-- Add a label for 'fullname'-->
-
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
+    
+    <form method="GET">
+      <label for="fullname">Name:</label>
+      <input id="fullname" type="text" name="fullname" placeholder="Enter Name" required>
 
 
       <!-- Add a label for 'email'-->
+      
+      <label for="email">Email:</label>
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
+      
+      <input id="email" name="email" type="email" placeholder="Enter Email" required>
+      
       <!-- Include the place holder text "Enter Email" and make this input required -->
 
 
       <!-- Add a label for 'phone'-->
+      
+      <label for="phone">Telephone</label>
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
+      
+      <input id="phone" name="phone" type="tel" placeholder="Enter Telephone (optional)">
+      
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+      
+      <label for="message">Is there any additional information you'd like us to know?</label>
 
       <!-- Add a label for 'message'-->
+      
+      <input type="textarea" id="message" name="message" placeholder="Enter Message">
+      
+      <textarea id="message" placeholder="Enter Message">Hi</textarea>
 
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
+      
+      <h3>What kind of company do you think we are?</h3>
+      <input id="checkbox" type="checkbox" name="type1" value="fake">A fake one<br>
 
 
       <!-- Add an input with the type set to 'submit' -->
-
+      
+      <input type="submit" value="submit">
+      
+      </form>
     
   </body>
 </html>
